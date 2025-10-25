@@ -6,7 +6,7 @@
 
 body {
     background-color: #222831;
-    font-size: 16px;
+    font-size: 16px; /* Base Unit */
 }
 
 /* Generic CSS Block - Start */
@@ -34,12 +34,31 @@ header {
             ul {
                 display: flex;
                 list-style: none;
-                gap: 1rem;
+                gap: 2rem;
                 li {
                     color: #ffffff;
-                    a {
+                    a { /* Normal State for the anchor */
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        font-size: 1rem;
                         color: #ffffff;
                         text-decoration: none;
+                        position: relative;
+                        &:before {
+                            content: " ";
+                            position: absolute;
+                            left: 0.1875rem;
+                            bottom: -0.5rem;
+                            right: 0.1875rem;
+                            height: 0.25rem;
+                            background-color: transparent;
+                            transition: 0.3s all ease-in-out;
+                        }
+                        &:hover { /* Hover State for the anchor */
+                            &::before {
+                                background-color: #29a19c;
+                            }
+                        }
                     }
                 }
             }
