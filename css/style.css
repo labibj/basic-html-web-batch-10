@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+.d-flex {
+    display: flex;
+}
+
 /* Generic CSS Block - End */
 
 /* Header CSS - Start */
@@ -30,6 +34,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 0 0 0;
+        padding: 1rem 0 0 0;
         .navigation {
             ul {
                 display: flex;
@@ -63,7 +69,43 @@ header {
                 }
             }
         }
+        .search-form {
+            background-color: #ffffff;
+            position: relative;
+            .icon-search {
+                position: absolute;
+                left: 0.5rem;
+                top: 0.5rem;
+                z-index: 1;
+            }
+            .input-search {
+                border: none;
+                padding: 0.5rem 0.5rem 0.5rem 2rem;
+            }
+        }
     }
 }
 
 /* Header CSS - End */
+
+
+/* Sectiion - Intro Banner */
+.section-intro-banner {
+    h1 {
+        font-family: "Grand Hotel", cursive;
+        color: #ffffff;
+        font-size: 6rem;
+        font-weight: 400;
+    }
+    h2 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    button {
+        background-color: #29a19c;
+        color: #ffffff;
+    }
+}
+/* Sectiion - Intro Banner End */
