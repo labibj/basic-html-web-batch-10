@@ -7,12 +7,36 @@
 body {
     background-color: #222831;
     font-size: 16px; /* Base Unit */
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Generic CSS Block - Start */
 
-h1, h2, h3, h4, h5, h6 {
-    
+:root {
+    -ct-btn-primary-bg-color: #29a19c;
+    -ct-btn-primary-text-color: #ffffff;
+}
+
+h1, h2 {
+    margin: 0 0 1.5rem 0;
+}
+
+
+h3, h4, h5, h6 {
+    margin: 0 0 1rem 0;
+}
+
+h1, h2 {
+    font-family: "Grand Hotel", cursive;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+}
+
+input, button {
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -25,11 +49,30 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem; /* 0.5rem = 8px */
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    color: var(-ct-btn-primary-text-color);
+    background-color: var(-ct-btn-primary-bg-color);
+}
+
 /* Generic CSS Block - End */
 
 /* Header CSS - Start */
 
 header {
+    margin: 0 0 2rem 0;
     nav {
         display: flex;
         justify-content: space-between;
@@ -44,7 +87,6 @@ header {
                 li {
                     color: #ffffff;
                     a { /* Normal State for the anchor */
-                        font-family: "Montserrat", sans-serif;
                         font-weight: 700;
                         font-size: 1rem;
                         color: #ffffff;
@@ -91,13 +133,12 @@ header {
 
 /* Sectiion - Intro Banner */
 .section-intro-banner {
-    h1 {
-        font-family: "Grand Hotel", cursive;
+    h1 {        
         color: #ffffff;
         font-size: 6rem;
         font-weight: 400;
     }
-    h2 {
+    h3   {
         color: #ffffff;
     }
     p {
@@ -109,3 +150,11 @@ header {
     }
 }
 /* Sectiion - Intro Banner End */
+
+
+.bg-pattern {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+}
