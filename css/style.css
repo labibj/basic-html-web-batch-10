@@ -1,0 +1,273 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+body {
+    background-color: #222831;
+    font-size: 16px; /* Base Unit */
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Generic CSS Block - Start */
+
+:root {
+    -primary-bg-color: #29a19c;
+    -ct-btn-primary-bg-color: #29a19c;
+    -ct-btn-primary-text-color: #ffffff;
+}
+
+h1, h2 {
+    margin: 0 0 1.5rem 0;
+}
+
+
+h3, h4, h5, h6 {
+    margin: 0 0 1rem 0;
+}
+
+h1, h2 {
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+}
+
+input, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem; /* 0.5rem = 8px */
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    color: var(-ct-btn-primary-text-color);
+    background-color: var(-ct-btn-primary-bg-color);
+}
+
+.btn.btn-secondary {
+    background-color: #222831;
+    color: #ffffff;
+    transition: all ease-in-out 0.1s;
+    &:hover {
+        background-color: #ffffff;
+        color: #222831;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Generic CSS Block - End */
+
+/* Header CSS - Start */
+
+header {
+    margin: 0 0 2rem 0;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 0 0;
+        padding: 1rem 0 0 0;
+        .navigation {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                li {
+                    color: #ffffff;
+                    a { /* Normal State for the anchor */
+                        font-weight: 700;
+                        font-size: 1rem;
+                        color: #ffffff;
+                        text-decoration: none;
+                        position: relative;
+                        &:before {
+                            content: " ";
+                            position: absolute;
+                            left: 0.1875rem;
+                            bottom: -0.5rem;
+                            right: 0.1875rem;
+                            height: 0.25rem;
+                            background-color: transparent;
+                            transition: 0.3s all ease-in-out;
+                        }
+                        &:hover { /* Hover State for the anchor */
+                            &::before {
+                                background-color: #29a19c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search-form {
+            background-color: #ffffff;
+            position: relative;
+            .icon-search {
+                position: absolute;
+                left: 0.5rem;
+                top: 0.5rem;
+                z-index: 1;
+            }
+            .input-search {
+                border: none;
+                padding: 0.5rem 0.5rem 0.5rem 2rem;
+            }
+        }
+    }
+}
+
+/* Header CSS - End */
+
+
+/* Sectiion - Intro Banner */
+.section-intro-banner {
+    h1 {        
+        color: #ffffff;
+        font-size: 6rem;
+        font-weight: 400;
+    }
+    h3   {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    button {
+        background-color: #29a19c;
+        color: #ffffff;
+    }
+    .col-content {
+        width: 50%;
+        position: relative;
+        top: -5rem;
+    }
+    .col-img {
+        width: 50%;
+        .img-intro-banner {
+            position: relative;
+            right: -8.5rem;
+            width: 100%;
+        }
+    }
+}
+/* Sectiion - Intro Banner End */
+
+
+.bg-pattern {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Section Black Coffee Start */
+
+.section-black-coffee {
+    position: relative;
+    .img-section-black-coffee-top-pattern {
+        position: absolute;
+        top: -10rem;
+        left: 0;
+        right: 0;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        svg {
+            width: 100%;
+        }
+    }
+    .content-area {
+        background-color: #29a19c;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 8rem 0 0 0;
+        position: relative;
+        z-index: 1;
+        .col-content {
+            width: 50%;
+            h2 {
+                color: #ffffff;
+            }
+        }
+        .col-img-desc {
+            width: 50%;
+            .img-content-black-coffee {
+                margin: 0 0 2rem 0;
+            }
+            p {
+                color: #ffffff;
+                text-align: right;
+            }
+        }
+    }
+     .img-section-black-coffee-bottom-pattern {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Section Black Coffee End */
+
+/* section-video start */
+.section-video {
+    padding: 2rem 0;
+    h1 {
+        color: #ffffff;
+        font-size: 3rem;
+    }
+}
+/* section-video end */
+
+/* Section Voucher Start */
+.section-voucher {
+    padding: 5rem 0 5rem 0;
+}
+/* Section Voucher End */
+
+/* SwiperJS CSS Start */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  color: #ffffff;
+}
+
+/* SwiperJS CSS End */
