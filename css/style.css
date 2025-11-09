@@ -38,7 +38,10 @@ h2 {
     font-weight: 400;
     line-height: 1;
     color: #ffffff;
+}
 
+h3 {
+    color: #fff;
 }
 
 p {
@@ -71,11 +74,12 @@ input, button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem; /* 0.5rem = 8px */
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn.btn-primary {
-    color: var(-ct-btn-primary-text-color);
-    background-color: var(-ct-btn-primary-bg-color);
+    color: #ffffff;
+    background-color: #29a19c;
 }
 
 .btn.btn-secondary {
@@ -90,6 +94,18 @@ input, button {
 
 .w-100 {
     width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
 }
 
 /* Generic CSS Block - End */
@@ -260,13 +276,56 @@ header {
 .section-voucher {
     padding: 5rem 0 5rem 0;
 }
+
+.swiperjs-wapper-content {
+    width: 60%;
+    margin: 0 auto 3rem auto;
+}
+
+.voucher-area {
+    margin: 0 0 3rem 0;
+}
 /* Section Voucher End */
+
+/* Customer Reviews - Start */
+.customer-review-area {
+    .customer-card {
+        width: 100%;
+        max-width: 50%;
+        text-align: center;
+        padding: 0 8rem 0 8rem;
+
+        h3 {
+            font-family: "Grand Hotel", cursive;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+        p {
+            color: #ffffff;
+        }
+    }
+
+}
+
+/* Customer Reviews - End */
+
+/* section-video - Start */
+
+.section-video {
+    margin: 0 0 5rem 0;
+}
+
+/* section-video - End */
+
+/* section-audio */
+.section-audio {
+    padding: 2rem 0;
+}
 
 /* SwiperJS CSS Start */
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
   color: #ffffff;
 }
 
