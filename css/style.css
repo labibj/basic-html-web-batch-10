@@ -64,6 +64,10 @@ input, button {
     display: flex;
 }
 
+.gap-3 {
+    gap: 1rem;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -406,12 +410,139 @@ header {
 
 /* toggler-btn-sm End */
 
+/* Section - Blockquote Tag - Start */
+.section-blockquote {
+    background-color: #29a19c;
+    padding: 5rem 0;
+
+}
+.section-blockquote blockquote {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0 3rem 0;
+    text-align: center;
+}
+
+.section-blockquote cite {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+}
+.section-blockquote cite span {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+}
+/* Section - Blockquote Tag - End */
+
+/* Section - Article - Start */
+.section-article {
+    padding: 5rem 0;
+    
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        color: #fff;
+    }
+    .col-article {
+        width: 50%;
+    }
+    .col-img {
+        width: 50%;
+        img {
+            border-radius: 1rem;
+        }
+    }
+}
+/* Section - Article - End */
+
+/* section-article-detail - Start */
+.section-article-detail {
+    padding: 5rem 0;
+    h1, p {
+        color: #fff;
+    }
+    aside {
+        width: 15%;
+        .search-form {
+            background-color: #ffffff;
+            position: relative;
+            margin-bottom: 2rem;
+            .icon-search {
+                position: absolute;
+                left: 0.5rem;
+                top: 0.5rem;
+                z-index: 1;
+            }
+            .input-search {
+                border: none;
+                padding: 0.5rem 0.5rem 0.5rem 2rem;
+            }
+        }
+        .related-quick-links-articles {
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                li {
+                    color: #fff;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .col-article-details {
+        width: 80%;
+        margin-left: auto;
+    }
+}
+/* section-article-detail - End */
+
+/* Footer */
+.footer {
+    color: #fff;
+    background-color: #29a19c;
+    padding: 3rem 0;
+    .footer-col-about {
+        width: 50%;
+    }
+    .footer-col {
+        width: 25%;
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;;
+        }
+    }
+}
+/* /Footer */
+
 
 /* Media Query - Responsive View - Start */
 
 /* iPad Start */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .section-black-coffee {
+        & .content-area {
+            .d-flex {
+                flex-direction: column;
+            }
+            .col-content {
+                width: 100%;
+            }
+        }
+    }
 }
 /* iPad End */
 
